@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.2-b05-RC1. --><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://iac.spb.ru/grn/" xmlns:do="http://iac.spb.ru/grn/" targetNamespace="http://iac.spb.ru/grn/">
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://iac.spb.ru/grn/" schemaLocation="http://217.195.78.225:8180/GRN/FullPersonInfoService?xsd=1"></xsd:import>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="personInfoRequestMessage">
+		<wsdl:part name="requestBody" element="do:personInfoRequest"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="personInfoResponseMessage">
+		<wsdl:part name="responseBody" element="do:personInfoResponse"></wsdl:part>
+	</wsdl:message>
+	<wsdl:portType name="FullPersonInfo">
+		<wsdl:operation name="getPersonInfo" parameterOrder="requestBody">
+			<wsdl:input message="tns:personInfoRequestMessage"></wsdl:input>
+			<wsdl:output message="tns:personInfoResponseMessage"></wsdl:output>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="FullPersonInfoServiceSoapDocumentBinding" type="tns:FullPersonInfo">
+		<wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></wsdlsoap:binding>
+		<wsdl:operation name="getPersonInfo">
+			<wsdl:input>
+				<wsdlsoap:body use="literal"></wsdlsoap:body>
+			</wsdl:input>
+			<wsdl:output>
+				<wsdlsoap:body use="literal"></wsdlsoap:body>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="FullPersonInfoService">
+		<wsdl:port name="FullPersonInfoServiceSoapDocument" binding="tns:FullPersonInfoServiceSoapDocumentBinding">
+			<wsdlsoap:address location="http://217.195.78.225:8180/GRN/FullPersonInfoService"></wsdlsoap:address>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
