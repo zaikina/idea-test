@@ -1,10 +1,9 @@
 comit1
 commit2
 
-<<<<<<< Updated upstream:src/test2
 changes to stash
 
 changes to stash should be here
-=======
+
 changes to stash
->>>>>>> Stashed changes:src/test2
+
