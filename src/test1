@@ -1,4 +1,8 @@
 commit1
 commit2
 
+<<<<<<< Updated upstream:src/test1
 stash3
+=======
+stash 2
+>>>>>>> Stashed changes:src/test1
