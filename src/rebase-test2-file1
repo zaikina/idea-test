@@ -1,3 +1,5 @@
 rebase test2 file1 commit1
 
 rebase test2 file1 commit2
+
+rebase test2 file1 commit3
