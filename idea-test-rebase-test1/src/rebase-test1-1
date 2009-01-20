@@ -5,3 +5,4 @@ rebase test2 file1 commit3
 =======
 rebase test2 file 1 commit2
 >>>>>>> f1a46ae945643c343bfd75d47dd64323b9d9e683:idea-test-rebase-test1/src/rebase-test1-1
+changes before rebase
