@@ -215,7 +215,7 @@
   </component>
   <component name="ProjectFileVersion" converted="true" />
   <component name="ProjectKey">
-    <option name="state" value="project://C:\GitRoots\GitRoots.ipr" />
+    <option name="state" value="project://C:\Git\idea-test-git-root2\GitRoots.ipr" />
   </component>
   <component name="ProjectModuleManager">
     <modules>
@@ -246,11 +246,11 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$TEMPLATE$GitTest" vcs="Git" />
+    <mapping directory="$APPLICATION_HOME_DIR$/binGitTest" vcs="Git" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <UsedPathMacros>
-    <macro name="TEMPLATE" />
+    <macro name="TEMPLATE" description="" />
   </UsedPathMacros>
 </project>
 
